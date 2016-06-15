@@ -55,7 +55,7 @@ function get(callback) {
   var random = Math.floor(Math.random() * (max - min)) + min;
   var callbackData = data[global.whichTest || defaultData];
 
-  setTimeout(callback, random, callbackData);
+  setTimeout(callback, random, callbackData); //invokes inputCallback onetime after random timeout using the callbackdata, ref: https://nodejs.org/docs/v0.6.1/api/timers.html, another way to call it would just be callback(callbackData); without timeOut, the timeOut is used to simulate n/w call
 }
 
 module.exports = get;
