@@ -7,22 +7,22 @@ curDate.setMonth(curDate.getMonth() + 1);
 
 let i = 10;
 const runs = [
-  [false, 'seattle', new Date(curDate.setDate(i--)), i]
-  // [false, 'austin,tx', new Date(curDate.setDate(i--)), i],
-  // [false, 'Bali,Indonesia', new Date(curDate.setDate(i--)), i],
-  // [false, 'seattle', new Date(curDate.setDate(i--))],
-  // [false, 'seattle', new Date(curDate.setDate(i--)), 'a'],
-  // [false, 'seattle', '1/1/2017', 10],
-  // [true, 'seattle', '1/1/2016', 10],
-  // [true, 'seattle', 'a', 10],
-  // [true, 178307, 'a', 10],
-  // [true, 178307, '1/1/2016', 10],
-  // [false, 178307, '1/1/2017', 10],
-  // [false, 178307, new Date(curDate.setDate(i--)), i],
-  // [false, 178234, new Date(curDate.setDate(i--)), i],
-  // [false, 602651, new Date(curDate.setDate(i--)), i],
-  // [false, 178307, new Date(curDate.setDate(i--)), 'a'],
-  // [false, 178307, new Date(curDate.setDate(i--))]
+  [false, 'seattle', new Date(curDate.setDate(i--)), i],
+  [false, 'austin,tx', new Date(curDate.setDate(i--)), i],
+  [false, 'Bali,Indonesia', new Date(curDate.setDate(i--)), i],
+  [false, 'seattle', new Date(curDate.setDate(i--))],
+  [false, 'seattle', new Date(curDate.setDate(i--)), 'a'],
+  [false, 'seattle', '1/1/2017', 10],
+  [true, 'seattle', '1/1/2016', 10],
+  [true, 'seattle', 'a', 10],
+  [true, 178307, 'a', 10],
+  [true, 178307, '1/1/2016', 10],
+  [false, 178307, '1/1/2017', 10],
+  [false, 178307, new Date(curDate.setDate(i--)), i],
+  [false, 178234, new Date(curDate.setDate(i--)), i],
+  [false, 602651, new Date(curDate.setDate(i--)), i],
+  [false, 178307, new Date(curDate.setDate(i--)), 'a'],
+  [false, 178307, new Date(curDate.setDate(i--))]
 ];
 
 const work = runs.map(run => new Promise((resolve) => {
